@@ -6,9 +6,9 @@ let settings;
 
 // initialize with default settings...
 let s = {
-  'lat': 51.5072,
-  'lon': 0.1276,
-  'location': "London"
+  'lat': 17.387,
+  'lon': 78.491,
+  'location': "Hyderabad"
 }
 
 function loadSettings() {
