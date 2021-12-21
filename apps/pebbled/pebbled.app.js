@@ -86,7 +86,7 @@ function draw() {
     g.setColor('#fff'); // white on blue or red best contrast
   else
     g.setColor('#000'); // otherwise black regardless of theme
-  g.drawString((stps / 1000 * settings.avStep).toFixed(2) + ' KM', w/2, ha + 107);
+  g.drawString(E.getBattery + ' %', w/2, ha + 107);
 }
 
 // at x,y width:wi thicknes:th
