@@ -18,15 +18,15 @@
         storage.write(SETTINGS_FILE, settings);
     }
 
-    var color_options = ['Green','Orange','Cyan','Purple','Red','Blue'];
-    var bg_code = ['#0f0','#ff0','#0ff','#f0f','#f00','#00f'];
+    var color_options = ['Green','Orange','Cyan','Purple','Red','Blue','Black'];
+    var bg_code = ['#0f0','#ff0','#0ff','#f0f','#f00','#00f','#000'];
 
     E.showMenu({
         '': { 'title': 'Pebble Clock' },
         '< Back': back,
         'Color': {
             value: 0 | color_options.indexOf(s.color),
-            min: 0, max: 5,
+            min: 0, max: 6,
             format: v => color_options[v],
             onchange: v => {
                 s.color = color_options[v];
