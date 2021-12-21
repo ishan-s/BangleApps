@@ -49,7 +49,7 @@ function draw() {
   g.fillRect(0, h2 - t, w, h2);
 
   // day and steps
-  if (settings.color == 'Blue' || settings.color == 'Red')
+  if (settings.color == 'Blue' || settings.color == 'Red' || settings.color == 'Black')
     g.setColor('#fff'); // white on blue or red best contrast
   else
     g.setColor('#000'); // otherwise black regardless of theme
