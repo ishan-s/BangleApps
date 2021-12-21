@@ -20,9 +20,9 @@ function save() {
   require('Storage').write(SETTINGS_FILE, settings)
 }
 
-const locations = ["London", "Newcastle", "Edinburgh", "Paris", "New York", "Tokyo","???"];
-const lats = [51.5072 ,54.9783 ,55.9533 ,48.8566 ,40.7128 ,35.6762, 0.0];
-const lons = [-0.1276  ,-1.6178  ,-3.1883  ,2.3522  , -74.0060 ,139.6503, 0.0];
+const locations = ["Hyderabad","London", "Newcastle", "Edinburgh", "Paris", "New York", "Tokyo","???"];
+const lats = [17.387, 51.5072 ,54.9783 ,55.9533 ,48.8566 ,40.7128 ,35.6762, 0.0];
+const lons = [78.491, -0.1276  ,-1.6178  ,-3.1883  ,2.3522  , -74.0060 ,139.6503, 0.0];
 
 function setFromGPS() {
   Bangle.on('GPS', (gps) => {
@@ -55,10 +55,10 @@ function showMainMenu() {
     '<Back': ()=>{ load(); },
     'City': {
       value: 0 | locations.indexOf(s.location),
-      min: 0, max: 6,
+      min: 0, max: 7,
       format: v => locations[v],
       onchange: v => {
-        if (v != 6) {
+        if (v != 7) {
           s.location = locations[v];
           s.lat = lats[v];
           s.lon = lons[v];
