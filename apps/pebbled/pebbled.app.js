@@ -82,7 +82,7 @@ function draw() {
   drawCalendar(((w/2) - 42)/2, 11, 42, 4, da[2]);
   
   // distance 
-  if (settings.color == 'Blue' || settings.color == 'Red')
+  if (settings.color == 'Blue' || settings.color == 'Red' || settings.color == 'Black')
     g.setColor('#fff'); // white on blue or red best contrast
   else
     g.setColor('#000'); // otherwise black regardless of theme
